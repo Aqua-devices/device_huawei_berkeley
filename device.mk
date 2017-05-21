@@ -17,6 +17,10 @@
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/huawei/berkeley/berkeley-vendor.mk)
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    OneplusThreeDoze
+
 # Local overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
